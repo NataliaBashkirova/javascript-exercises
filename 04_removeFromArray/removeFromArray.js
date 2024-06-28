@@ -1,13 +1,7 @@
 const removeFromArray = function (inputArray, ...valuesToRemove) {
   //
-  for (value of valuesToRemove) {
-    let index = inputArray.indexOf(value);
-    while (index !== -1) {
-        inputArray.splice(index, 1);
-        index = inputArray.indexOf(value);
-    }
-  }
-  return inputArray;
+
+  return inputArray.filter(input => !valuesToRemove.includes(input));
 };
 
 // Do not edit below this line
