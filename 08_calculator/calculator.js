@@ -34,8 +34,6 @@ const factorial = function(number) {
   return result;	
 };
 
-
-multiply([2, 4]);
 // Do not edit below this line
 module.exports = {
   add,
