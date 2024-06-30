@@ -3,7 +3,9 @@ const convertToCelsius = function(fahrenheitDegrees) {
   return celsiusDegrees;
 };
 
-const convertToFahrenheit = function() {
+const convertToFahrenheit = function(celsiusDegrees) {
+  let fahrenheitDegrees = Math.round((celsiusDegrees * (9/5) + 32) * 10) /10;
+  return fahrenheitDegrees;
 };
 
 // Do not edit below this line
